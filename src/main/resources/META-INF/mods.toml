@@ -4,11 +4,11 @@ license="Unlicense"
 [[mods]]
 modId="blahaj"
 version="${file.jarVersion}"
-displayName="Blåhaj"
-displayURL="https://hibiscus.pet/mods/blahaj"
+displayName="Blåhaj - Reforged"
+displayURL="https://modrinth.com/mod/blahaj-reforged"
 logoFile="icon.png"
-credits="Thanks for this example mod goes to Java"
-authors="Hibi, port by agnor99"
+credits="Made by Hibi"
+authors="Made by Hibi, ported to Forge by agnor99"
 
 description='''
 Soft toy, shark mod, 16px.
