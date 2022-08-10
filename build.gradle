@@ -26,8 +26,8 @@ archivesBaseName = "${mod_id}-forge"
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 mixin {
-	add sourceSets.main, "mixins.passivepregen.refmap.json"
-	config "mixins.passivepregen.json"
+	add sourceSets.main, "blahaj.mixins.refmap.json"
+	config "blahaj.mixins.json"
 }
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"

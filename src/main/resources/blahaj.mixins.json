@@ -4,11 +4,10 @@
 	"package": "hibi.blahaj.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-      "HumanoidModelMixin",
-      "PlayerEntityRendererMixin"
     ],
 	"client": [
-		"AllayEntityMixin"
+      "HumanoidModelMixin",
+      "PlayerEntityRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
