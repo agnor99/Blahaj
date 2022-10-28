@@ -16,7 +16,7 @@ Soft toy, shark mod, 16px.
 [[dependencies.blahaj]]
     modId="forge"
     mandatory=true
-    versionRange="[43,)"
+    versionRange="[43.1.2,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.blahaj]]
