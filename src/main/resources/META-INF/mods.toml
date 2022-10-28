@@ -1,9 +1,9 @@
 modLoader="javafml"
-loaderVersion="[43,)"
+loaderVersion="[40,)"
 license="Unlicense"
 [[mods]]
 modId="blahaj"
-version="${file.jarVersion}"
+version="0.1.1"
 displayName="Blåhaj - Reforged"
 displayURL="https://modrinth.com/mod/blahaj-reforged"
 logoFile="icon.png"
@@ -16,12 +16,12 @@ Soft toy, shark mod, 16px.
 [[dependencies.blahaj]]
     modId="forge"
     mandatory=true
-    versionRange="[43,)"
+    versionRange="[40,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.blahaj]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2,1.20)"
+    versionRange="[1.18.2,1.19)"
     ordering="NONE"
     side="BOTH"

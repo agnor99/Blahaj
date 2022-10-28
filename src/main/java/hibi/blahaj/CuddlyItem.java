@@ -6,6 +6,8 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.StringTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -23,7 +25,7 @@ public class CuddlyItem extends Item {
 
 	public CuddlyItem(Properties properties, String subtitle) {
 		super(properties);
-		this.subtitle = subtitle == null? null: Component.translatable(subtitle).withStyle(ChatFormatting.GRAY);
+		this.subtitle = subtitle == null? null: new TranslatableComponent(subtitle).withStyle(ChatFormatting.GRAY);
 	}
 
 	@Override
@@ -38,10 +40,10 @@ public class CuddlyItem extends Item {
 				return;
 			}
 			if (stack.hasCustomHoverName()) {
-				tooltip.add(Component.translatable("tooltip.blahaj.owner.rename", this.getDescription(), Component.literal(owner)).withStyle(ChatFormatting.GRAY));
+				tooltip.add(new TranslatableComponent("tooltip.blahaj.owner.rename", this.getDescription(), new TextComponent(owner)).withStyle(ChatFormatting.GRAY));
 			}
 			else {
-				tooltip.add(Component.translatable("tooltip.blahaj.owner.craft", Component.literal(owner)).withStyle(ChatFormatting.GRAY));
+				tooltip.add(new TranslatableComponent("tooltip.blahaj.owner.craft", new TextComponent(owner)).withStyle(ChatFormatting.GRAY));
 			}
 		}
 	}
